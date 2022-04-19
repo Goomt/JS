@@ -1,0 +1,84 @@
+body{
+  background-color: #6bbcbe;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+@keyframes bRotate{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  75%{
+    transform: rotateZ(180deg);
+  }
+  100%{
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes bJump{
+  0%{
+    height:120px;
+  }
+  25%{
+    height:200px;
+  }
+  50%{
+    height:120px;
+  }
+  100%{
+    height:120px;
+  }
+}
+.fbox{
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  animation: bRotate 1s ease-in-out infinite;
+}
+.sbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0% auto;
+  height: 200px;
+  width: 50%;
+}
+.dot{
+  border-radius: 100px;
+  background-color: white;
+  height:20px;
+  width:20px; 
+  margin: 20px;
+}
+.bar{
+  background-color: white;
+  height:120px;
+  width:20px;
+  margin: 5px;
+}
+
+.bar:nth-child(1){
+  animation: bJump 1s ease-in-out infinite;
+}
+
+.bar:nth-child(2){
+  animation: bJump 1s ease-in-out infinite;
+  animation-delay: .1s;
+}
+.bar:nth-child(3){
+  animation: bJump 1s ease-in-out infinite;
+  animation-delay: .2s;
+}
+.bar:nth-child(4){
+  animation: bJump 1s ease-in-out infinite;
+  animation-delay: .3s;
+}
+.bar:nth-child(5){
+  animation: bJump 1s ease-in-out infinite;
+  animation-delay: .4s;
+}
+
